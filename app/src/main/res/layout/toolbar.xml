@@ -67,7 +67,7 @@
             android:orientation="horizontal"
             android:layout_gravity="center"
             android:layout_margin="15dp">
-            <DatePicker
+         <!--   <DatePicker
                 android:id="@+id/date_picker"
                 android:layout_width="150dp"
                 android:calendarViewShown="true"
@@ -80,22 +80,25 @@
                 android:id="@+id/time_picker"
                 android:layout_width="90dp"
                 android:layout_height="30dp"
-                android:background="@drawable/border" />
-            <!--<EditText
+                android:background="@drawable/border" />-->
+            <TextView
+                android:id="@+id/date"
                 android:layout_width="150dp"
                 android:layout_height="30dp"
-                android:inputType="date"
                 android:maxLines="1"
-                android:paddingLeft="10dp"
                 android:background="@drawable/border"
-                android:layout_marginRight="10dp"/>
-            <EditText
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="showDatePickerDialog"/>
+            <TextView
+                android:id="@+id/time"
                 android:layout_width="90dp"
                 android:layout_height="30dp"
-                android:inputType="datetime"
-                android:paddingLeft="10dp"
                 android:maxLines="1"
-                android:background="@drawable/border"/>-->
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/border"
+                android:onClick="showTimePickerDialog"/>
         </LinearLayout>
     </LinearLayout>
 
