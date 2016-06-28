@@ -76,8 +76,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         newFragment.show(getSupportFragmentManager(), "datePicker");
     }
 
-
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -96,7 +94,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onMapLoaded() {
                 // Map loaded. Dismiss this dialog, removing it from the screen.
-                // myProgress.dismiss();
+                //myProgress.dismiss();
                 askPermissionsAndShowMyLocation();
             }
         });
@@ -126,11 +124,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 return;
             }
         }
-        //else {
-            showMyLocation();
-          //      mMap.setMyLocationEnabled(true);
-       // }
-    }
+        showMyLocation();
+        mMap.setMyLocationEnabled(true);
+}
 
     // When you have the request results.
     @Override
