@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Raye7 Task_Main Screen_</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="from_address">from  </string>
+    <string name="to_address"  >to    </string>
+
+</resources>
