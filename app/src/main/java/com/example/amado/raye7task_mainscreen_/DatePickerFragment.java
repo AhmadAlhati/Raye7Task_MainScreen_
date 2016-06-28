@@ -25,7 +25,6 @@ public class DatePickerFragment extends DialogFragment
         int year = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
-
         // Create a new instance of DatePickerDialog and return it
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }
@@ -34,6 +33,5 @@ public class DatePickerFragment extends DialogFragment
         // Do something with the date chosen by the user
         TextView tv1= (TextView) getActivity().findViewById(R.id.date);
         tv1.setText(MONTHS[view.getMonth()]+" "+view.getDayOfMonth()+", "+view.getYear());
-
     }
 }
