@@ -86,6 +86,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:background="@drawable/border"
                 android:onClick="showTimePickerDialog"/>
+
         </LinearLayout>
     </LinearLayout>
 
